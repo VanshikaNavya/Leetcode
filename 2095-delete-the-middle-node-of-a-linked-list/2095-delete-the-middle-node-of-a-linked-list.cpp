@@ -22,7 +22,7 @@ public:
         while(prev->next!=slow){
             prev=prev->next;
         }
-        prev->next=prev->next->next;
+        prev->next=slow->next;
         delete slow;
         return head;
     }
