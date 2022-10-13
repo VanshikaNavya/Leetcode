@@ -5,7 +5,7 @@ public:
         sort(nums.begin(), nums.end());
         int n=nums.size();
         for(int i=0; i<n; i++){
-            int a=nums[i];
+            int a= nums[i];
             int t=-a;
             int s=i+1;
             int e=n-1;
