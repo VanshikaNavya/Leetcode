@@ -3,8 +3,8 @@ public:
     bool checkIfPangram(string sentence) {
         vector<int> v(26,0);
         if(sentence.length()<26) return false;
-        for(int i=0; i<sentence.length(); i++){
-            v[sentence[i]-'a']++;
+        for(char ch:sentence){
+            v[ch-'a']++;
         }
         for(int i=0; i<26; i++){
             if(v[i]==0) return false;
