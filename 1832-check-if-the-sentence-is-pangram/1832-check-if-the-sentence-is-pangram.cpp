@@ -2,7 +2,6 @@ class Solution {
 public:
     bool checkIfPangram(string sentence) {
         vector<int> v(26,0);
-        if(sentence.length()<26) return false;
         for(char ch:sentence){
             v[ch-'a']++;
         }
