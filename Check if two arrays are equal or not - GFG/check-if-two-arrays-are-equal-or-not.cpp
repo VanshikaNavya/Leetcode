@@ -14,16 +14,13 @@ class Solution{
     //Function to check if two arrays are equal or not.
     bool check(vector<ll> A, vector<ll> B, int N) {
         //code here
+        if(A.size()!=B.size()) return 0;
         sort(A.begin(), A.end());
         sort(B.begin(), B.end());
-        if(A.size()!=B.size()) return 0;
-        int n = A.size();
-        for(int i=0; i<n; i++){
-            if(A[i]!=B[i]){
-                return 0;
-            }
+        for(int i=0; i<A.size(); i++){
+            if(A[i]!=B[i]) return false;
         }
-        return 1;
+        return true;
     }
 };
 
